@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Finshing Hold Lot Application</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+<div id="header">
+    <H1>FINISHING HOLD LOT APPLICATION</H1>
+    </div>
+<form method="post" id="lotinfoform">
+    <div id="lotinfo">
+        <div class="inputdata">
+                <label for="lotnumber" class="title">Lot Number:</label>
+                <input type="text" id ="lotnumber" value="Enter Lot Number" maxlength="10" onfocus="this.value=''">
+        </div>
+        <div class="inputdata">
+            <label class="title"> FW STEP</label>
+            <select id="fwstep" class="currSelVal">
+                    <option value="stepval1">T42-SCANNING</option>
+                    <option value="stepval2">T42-PACKING</option>
+            </select>
+        </div>
+        <div class="inputdata">
+            <label class="title">User:</label>
+            <select id="user" class="currSelVal">
+                    <option value="userval1">Joseph Fenech</option>
+                    <option value="userval2">John Borg</option>
+            </select>
+        </div>
+        <div class="inputdata">
+            <label class="title">Salestype:</label>
+            <label id="saletypeHolder" class="currVal">ST123654</label> 
+        </div>        
+        <div class="inputdata">    
+            <label class="title">Last Machine Used:</label>
+            <label id="machine" class="currVal">ICOS 123</label>
+        </div>
+        <div class="inputdata">    
+            <label class="title">Product From:</label>
+            <label id="prodcode" class="currVal">1234*hgdfhdf</label>
+        </div>
+        <div class="inputdata">     
+            <label class="title">PNL Code:</label>
+            <label id="pnl" class="currVal">G1</label>
+        </div>
+        <div class="inputdata">     
+            <label class="title">LotQty:</label>
+            <label id="pnl" class="currVal">5641</label>
+        </div>
+    </div>
+    </form>
+<form method="post" id="lotAnalysis">
+    <div id="Lotanalysed">
+        <div id="yielddate">
+           <label class="title">LotQty:</label>
+            <input type="number" value="00000000" onfocus="this.value=''">
+            <input type="number" value="99999" onfocus="this.value=''">
+            <label class="title">Yield:</label>
+            <label id="yield" class="currVal">90%</label>
+        </div>
+        
+        
+        <div id="paramateric">
+            <input class ="rejecttype" type="checkbox" name="discrepancy" value="discrepancy"><span class="rejtitle">Discrepancy</span>
+            <input type="text" id ="txtdiscrepancy" value="Enter Comment" onfocus="this.value=''" disabled>
+            <br>
+            <input class ="rejecttype" type="checkbox" name="mixage" value="mixage"><span class="rejtitle">Mixage</span>
+            <input type="text" id ="txtmixage" value="Enter Comment" onfocus="this.value=''" disabled>
+            <br>
+            <input class ="rejecttype" type="checkbox" name="chip" value="chip"><span class="rejtitle">Chipped Package</span>
+            <input type="text" id ="txtchip" value="Enter Comment" onfocus="this.value=''" disabled>
+            <br>
+            <input class ="rejecttype" type="checkbox" name="Dented Cap" value="mixage"><span class="rejtitle">Dented Cap</span>
+            <input type="text" id ="txtdentedcap" value="Enter Comment" onfocus="this.value=''" disabled>
+            <br>
+            <input class ="rejecttype" type="checkbox" name="Dented Cap" value="mixage"><span class="rejtitle">Other Rejects</span>
+            <select id="rejectdrop" class="currSelVal">
+                    <option value="userval1">Reject1</option>
+                    <option value="userval2">Reject2</option>
+            </select>
+        </div>
+    </div>
+
+</form>
+</body>
+
+</html>

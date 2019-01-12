@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* CSS Document */
+
+html { 
+  background: url(./bk2.png) no-repeat center center fixed; 
+  
+}
+
+label{
+   
+    padding:0 10px;
+}
+
+#lotinfo{
+    border-style: solid;
+    border-width: thin;
+    width:100%;
+    
+}
+#lotinfoform{
+    width:100%;
+    
+}
+
+#lotinfo select{
+    background: #E8E1EF;
+    
+}
+
+#lotinfo input{
+    font-weight: bold;
+    background-color: #E8E1EF;
+    color : red;
+   
+    
+}
+
+
+#lotinfo label.currVal{
+    background: #7C9299;
+    border-style: solid;
+    display: inline-block;
+}
+
+#lotinfo label.title{
+   background: #B4E33D;
+    display: inline-block;
+    margin-left: 10px;
+    margin-left: 2px;
+    text-decoration: underline;
+}
+#lotinfo div.inputdata{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+#lotinfo div.inputdata select{
+padding-right: 10px
+    
+}
+
+#lotAnalysis #Lotanalysed{
+    margin-top:10px;
+    width:50%;
+     border-style: solid;
+    border-width: thin;
+}
+
+#lotAnalysis #Lotanalysed #paramateric span.rejtitle{
+    float: left;
+  width: 200px; 
+}
+
+#lotAnalysis #Lotanalysed #paramateric input.rejecttype{
+    float: left;
+
+}
+
